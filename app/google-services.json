@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "814302475291",
+    "firebase_url": "https://socialmediaapp-23c0e.firebaseio.com",
+    "project_id": "socialmediaapp-23c0e",
+    "storage_bucket": "socialmediaapp-23c0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814302475291:android:3857ae2a7f3fe6fc",
+        "android_client_info": {
+          "package_name": "app.calcounterapplication.com.socialmediaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814302475291-q6ier6m4vochp8vtlfdbpmijd35ch3rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.calcounterapplication.com.socialmediaapp",
+            "certificate_hash": "475fbf5e85d6bef1e99b47a783f93475356d4c40"
+          }
+        },
+        {
+          "client_id": "814302475291-2ekbsn8aa4spa8916iclv8gak928ku30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY0nep21vLhc0PlVvNnNegemGF3L0kp4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814302475291-2ekbsn8aa4spa8916iclv8gak928ku30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

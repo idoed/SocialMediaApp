@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.calcounterapplication.com.socialmediaapp.fragments.FriendsFrag">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfile"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/all_friends_text"
+        android:layout_marginTop="15dp"
+        android:text="Friends"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/all_friends_text"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/common_google_signin_btn_text_light_disabled"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>
+
+</FrameLayout>

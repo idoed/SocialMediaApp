@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.calcounterapplication.com.socialmediaapp.fragments.PersonStoriesFragment"
+    android:background="@color/mainBackground">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@android:color/holo_green_dark"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:expandedTitleTextAppearance="@android:color/transparent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/green_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/friends_stories_profile_image"/>
+                <TextView
+                    android:id="@+id/friends_stories_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ido's Stories"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/collapsing_toolbar1"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:id="@+id/friends_stories_Stories_list">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+
+</FrameLayout>

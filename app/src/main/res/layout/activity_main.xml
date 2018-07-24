@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.calcounterapplication.com.socialmediaapp.MainActivity">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/main_page_toolBar">
+
+    </include>
+
+    <FrameLayout
+        android:layout_below="@+id/main_page_toolBar"
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+    </FrameLayout>
+    <ImageButton
+        android:id="@+id/add_new_story_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/main_container"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/add_post_high"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:baselineAlignBottom="false"
+        android:focusableInTouchMode="false"
+        />
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:id="@+id/navigation_view"
+        ></android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

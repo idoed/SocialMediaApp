@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.calcounterapplication.com.socialmediaapp.fragments.PersonProfileFragment">
+    <ScrollView
+        android:background="@color/colorProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/person_profile_pic"
+              android:layout_width="250dp"
+              android:layout_height="250dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="15dp"
+              android:src="@drawable/profile" />
+
+          <TextView
+              android:id="@+id/person_profile_full_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_profile_pic"
+              android:layout_marginTop="5dp"
+              android:text="Profile Name"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/cardview_light_background"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/person_user_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_profile_full_name"
+              android:text="User Name"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/cardview_light_background"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/person_profile_status"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_user_name"
+              android:layout_marginTop="5dp"
+              android:text="Hey there, I am using Stories App, Developed by Ido Shtrauch"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+
+          <TextView
+              android:id="@+id/person_country"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_profile_status"
+              android:layout_marginTop="60dp"
+              android:text="Country"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/colorAccent"
+              android:textSize="16sp" />
+
+          <TextView
+              android:id="@+id/person_dob"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_country"
+              android:layout_marginTop="2dp"
+              android:text="Date Of Birth"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/colorAccent"
+              android:textSize="16sp" />
+
+          <TextView
+              android:id="@+id/person_gender"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_dob"
+              android:layout_marginTop="2dp"
+              android:text="Gender"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/colorAccent"
+              android:textSize="16dp" />
+
+          <TextView
+              android:id="@+id/person_relation_status"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/person_gender"
+              android:layout_marginTop="2dp"
+              android:text="Relationship Status"
+              android:textAlignment="center"
+              android:textAllCaps="false"
+              android:textColor="@color/colorAccent"
+              android:textSize="16sp" />
+                    
+      <Button
+          android:layout_width="230dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/person_send_friend_request_but"
+          android:layout_below="@id/person_relation_status"
+          android:layout_marginTop="45dp"
+          android:text="Friend Request"
+          android:background="@color/colorPrimaryDark"
+          android:textColor="@android:color/background_light"
+          android:layout_centerHorizontal="true"/>
+      <Button
+          android:layout_width="230dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/person_decline_send_friend_request_but"
+          android:layout_below="@id/person_send_friend_request_but"
+          android:layout_marginTop="8dp"
+          android:text="Decline "
+          android:background="@color/colorPrimary"
+          android:textColor="@android:color/background_light"
+          android:layout_centerHorizontal="true"/>
+
+
+  </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

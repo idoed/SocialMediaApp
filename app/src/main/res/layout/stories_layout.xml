@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainBackground">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:id="@+id/cardView"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="0dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <VideoView
+                android:id="@+id/story_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+
+                />
+            <TextView
+                android:layout_width="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardview_date_text"
+                android:layout_below="@id/story_image_view"
+                android:text="Date:"
+                android:paddingTop="10dp"
+                android:textSize="11sp"
+                android:textColor="#808080"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/cardview_time_text"
+                android:layout_below="@+id/cardview_date_text"
+
+                android:text="time:"
+                android:textSize="11sp"
+                android:paddingTop="10dp"
+                android:textColor="#808080"/>
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="20dp"
+                android:id="@+id/image_menu_but"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/story_image_view"
+                android:src="@drawable/ic_dots"
+              />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
